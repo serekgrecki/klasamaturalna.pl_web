@@ -1,0 +1,80 @@
+html,body {
+    height: 100%;
+  animation-name: dropHeader;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.8s;
+}
+body a {
+    color: antiquewhite;
+}
+
+#cover {
+    background: #222 url(../IMG/bg.jpeg) center; 
+    background-size: cover;
+    color: darkslategrey;
+    height: 100%;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+}
+#cover td {
+	text-align: center;
+    font-size: 200%;
+}
+#cover h1
+{
+    font-size: 400%;
+    font-weight: bold;
+}
+#cover h2
+{
+    font-size: 250%;
+}
+
+#navBar {
+	background-color: #292b2c!important;
+	position: fixed;
+	height: 100%;
+	font-size: 1rem;
+    font-family: 'Architects Daughter', cursive;
+    border-left: 0.7rem solid #D7393D;
+    color:white;
+    text-align:center;
+}
+#navBar ul{
+	padding: 0 0.3em 0 0;
+	list-style-type: none;
+	margin: 0px 0 100px 0;
+}
+#navBar li {
+	padding-top: 10px;
+} 
+#menu a {
+	display: inline-block;
+	color: white!important;
+	text-align: right;
+}
+#navBar a:hover {
+	color: white!important;
+	font-weight: 300;
+}
+#insideText{
+    background: #222 url(../IMG/bg.jpeg) center left no-repeat;
+    background-size: cover;
+}
+#text{
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin: 1rem 0rem;
+    padding:1rem;
+    text-align: center;
+}
+
+@keyframes dropHeader {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
